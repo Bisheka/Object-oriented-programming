@@ -1,0 +1,19 @@
+public class EvenOddNumber {
+    public static void main(String[] args) {
+        class evenoddnumber {
+            public void findEvenOrOdd(int i) {
+                if (i % 2 == 0) ;
+            }
+        }
+        class Demo {
+
+            public static void main(String[] args) {
+                // Create an object from EvenOddNumber class.
+                EvenOddNumber evenOddChecker = new EvenOddNumber();
+
+            }
+        }
+
+
+    }
+}

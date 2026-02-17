@@ -1,0 +1,15 @@
+public class milesandyards {
+    public static void main(String[] args) {
+       
+ // Declare variables
+        int miles=26;
+        int yards=385;
+        double kilometers;
+       
+ // formula
+        kilometers=(miles*1.609)+(yards/1760.0*1.609);
+        
+// Display results
+        System.out.println("Kilometers: "+kilometers);
+    }
+}
