@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class WordAnalyzer {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String[] words = new String[5];
+
+        // Accept 5 words from the user
+        System.out.print("Enter 5 words : ");
+        for(int i=0 ; i < 5 ; i++) {
+            words[i] = scanner.next();
+        }
+
+        // Find and display the longest word
+        String longestWord = "";
+        int totalCharacters = 0;
+
+        for(int i=0 ; i < 5 ; i++) {
+            if(words[i].length() > longestWord.length()) {
+                longestWord = words[i];
+            }
+            //Calculate and display the total number of characters
+            totalCharacters += words[i].length();
+
+        }
+
+        System.out.println("Longest Word : "+longestWord);
+        System.out.println("Total Numbers of characters: "+totalCharacters);
+
+
+        //Identify and display the words with an even number of characters
+        System.out.println("Words with an even number of characters : ");
+        for(int i=0 ; i <= 4 ; i++) {
+            if(words[i].length() % 2 == 0){
+                System.out.println(words[i]);
+            }
+
+
+        }
+
+        
+    }
+}
